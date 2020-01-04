@@ -1,5 +1,7 @@
 package pojoclass;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,72 +14,69 @@ public class CusandPaymentDetails extends Base{
 		PageFactory.initElements(driver, this);
 		}
 	@FindBy(id="first_name")
-	private WebElement fName; 
+	private  List<WebElement> fName; 
 	
 	@FindBy(id="last_name")
-	private WebElement lName; 
+	private List<WebElement> lName; 
 
 	
 	@FindBy(id="address")
-	private WebElement address;
-
+	private List<WebElement> address;
 	
-	public static WebDriver getDriver() {
-		return driver;
-	}
-
-	public WebElement getfName() {
-		return fName;
-	}
-
-	public WebElement getlName() {
-		return lName;
-	}
-
-	public WebElement getAddress() {
-		return address;
-	}
-
-	public WebElement getCcNum() {
-		return ccNum;
-	}
-
-	public WebElement getCcType() {
-		return ccType;
-	}
-
-	public WebElement getCcMonth() {
-		return ccMonth;
-	}
-
-	public WebElement getCcYear() {
-		return ccYear;
-	}
-
-	public WebElement getCcv() {
-		return ccv;
-	}
-
-	public WebElement getBookNow() {
-		return bookNow;
-	}
 	@FindBy(id="cc_num")
-	private WebElement ccNum;
+	private List<WebElement> ccNum;
 
 	
 	@FindBy(id="cc_type")
-	private WebElement ccType;
+	private List<WebElement> ccType;
 	
 	@FindBy(id="cc_exp_month")
-	private WebElement ccMonth;
+	private List<WebElement> ccMonth;
 	
 	@FindBy(id="cc_exp_year")
-	private WebElement ccYear;
+	private List<WebElement> ccYear;
 	
 	@FindBy(id="cc_cvv")
-	private WebElement ccv;
+	private List<WebElement> ccv;
 	
 	@FindBy(id="book_now")
-	private WebElement bookNow;
+	private List<WebElement> bookNow;
+
+	public List<WebElement> getfName() {
+		return fName;
+	}
+
+	public List<WebElement> getlName() {
+		return lName;
+	}
+
+	public List<WebElement> getAddress() {
+		return address;
+	}
+
+	public List<WebElement> getCcNum() {
+		return ccNum;
+	}
+
+	public List<WebElement> getCcType() {
+		return ccType;
+	}
+
+	public List<WebElement> getCcMonth() {
+		return ccMonth;
+	}
+
+	public List<WebElement> getCcYear() {
+		return ccYear;
+	}
+
+	public List<WebElement> getCcv() {
+		return ccv;
+	}
+
+	public List<WebElement> getBookNow() {
+		return bookNow;
+	}
+	
 	
 	}

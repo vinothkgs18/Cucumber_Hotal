@@ -1,5 +1,7 @@
 package pojoclass;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,19 +15,17 @@ public class HotalSelectionPojo extends Base{
 		PageFactory.initElements(driver, this);
 		
 	}
-	public static WebDriver getDriver() {
-		return driver;
-	}
-	public WebElement getHotalSelection() {
+	
+	@FindBy(id="radiobutton_0")
+	private List<WebElement> hotalSelection;
+	@FindBy(id="continue")
+	private List<WebElement> cont;
+	public List<WebElement> getHotalSelection() {
 		return hotalSelection;
 	}
-	public WebElement getCont() {
+	public List<WebElement> getCont() {
 		return cont;
 	}
-	@FindBy(id="radiobutton_0")
-	private WebElement hotalSelection;
-	@FindBy(id="continue")
-	private WebElement cont;
 	
 
 }

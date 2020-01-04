@@ -1,5 +1,7 @@
 package pojoclass;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,13 +15,11 @@ public class ConformpagePojo extends Base{
 		PageFactory.initElements(driver, this);		
 	}
 	@FindBy(id="order_no")
-	private WebElement orderNo;
-	public static WebDriver getDriver() {
-		return driver;
-	}
-	public WebElement getOrderNo() {
+	private List<WebElement> orderNo;
+	public List<WebElement> getOrderNo() {
 		return orderNo;
 	}
 	
-
+	
+	
 }

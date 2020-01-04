@@ -13,10 +13,11 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Base {
 	public static WebDriver driver;
-	public static WebDriver getDriverAcces() {
-		System.setProperty("webdriver.chrome.driver","F:\\Vinoth\\Programs\\vinoth\\MavenPro\\Driver\\chromedriver.exe");
+	public static  WebDriver getDriverAcces() {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\bebom\\eclipse-workspace\\Cucumber\\Driver\\chromedriver.exe");
 		driver=new ChromeDriver();
 		return driver;
+		
 	}
 	
 	//-------------------------------------------------------------
@@ -58,8 +59,9 @@ public class Base {
 		s.selectByValue(a);
 	}
 	public static void getAtibute(WebElement i) {
-		String a=i.getAttribute("value");
+		 String a = i.getAttribute("value");
 		System.out.println(a);
+		
 	}
 	
 	public static void mouseover(WebElement i) {

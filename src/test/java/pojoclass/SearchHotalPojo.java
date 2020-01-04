@@ -1,5 +1,7 @@
 package pojoclass;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -13,42 +15,58 @@ public class SearchHotalPojo extends Base{
 	PageFactory.initElements(driver, this);
 	}
 	@FindBy(id="location")
-	private WebElement loc;
+	private List<WebElement> loc;
 	@FindBy(id="hotels")
-	private WebElement hotal;
+	private List<WebElement> hotal;
 	@FindBy(id="room_type")
-	private WebElement roomType;
-	public static WebDriver getDriver() {
-		return driver;
-	}
-	public WebElement getLoc() {
+	private List<WebElement> roomType;
+	@FindBy(id="room_nos")
+	private List<WebElement> roomNo;
+	@FindBy(id="datepick_in")
+	private List<WebElement> checkInDate;
+	@FindBy(id="datepick_out")
+	private List<WebElement> checkOutDate;
+	
+	@FindBy(id="adult_room")
+	private List<WebElement> adult;
+	
+	@FindBy(id="child_room")
+	private List<WebElement> child;
+	
+	
+	@FindBy(id="Submit")
+	private List<WebElement> submit ;
+	public List<WebElement> getLoc() {
 		return loc;
 	}
-	public WebElement getHotal() {
+	public List<WebElement> getHotal() {
 		return hotal;
 	}
-	public WebElement getRoomType() {
+	public List<WebElement> getRoomType() {
 		return roomType;
 	}
-	public WebElement getRoomNo() {
+	public List<WebElement> getRoomNo() {
 		return roomNo;
 	}
-	public WebElement getCheckInDate() {
+	public List<WebElement> getCheckInDate() {
 		return checkInDate;
 	}
-	public WebElement getCheckOutDate() {
+	public List<WebElement> getCheckOutDate() {
 		return checkOutDate;
 	}
-	public WebElement getSubmit() {
+	
+	
+	public List<WebElement> getAdult() {
+		return adult;
+	}
+	public List<WebElement> getChild() {
+		return child;
+	}
+	public List<WebElement> getSubmit() {
 		return submit;
 	}
-	@FindBy(id="room_nos")
-	private WebElement roomNo;
-	@FindBy(id="datepick_in")
-	private WebElement checkInDate;
-	@FindBy(id="datepick_out")
-	private WebElement checkOutDate;
-	@FindBy(id="Submit")
-	private WebElement submit ;
+	
+	
+	
 
 }
