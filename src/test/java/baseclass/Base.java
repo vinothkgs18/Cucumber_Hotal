@@ -23,6 +23,7 @@ public class Base {
 	//-------------------------------------------------------------
 	public static void LaunchUrl(String url) {
 		driver.get(url);
+		System.out.println("lanuch application");
 	}
 	
 	//--------------------------------------------------------------
