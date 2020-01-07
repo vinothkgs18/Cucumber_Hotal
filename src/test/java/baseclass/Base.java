@@ -30,8 +30,8 @@ public class Base {
 	
 
 	
-	public static void button(WebElement loc) {
-		loc.click();
+	public static void button(WebElement locater) {
+		locater.click();
 
 	}
 	//-------------------------------------------------------
