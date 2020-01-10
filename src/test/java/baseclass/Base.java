@@ -27,14 +27,16 @@ public class Base {
 	}
 	
 	//--------------------------------------------------------------
-	public static void fill(WebElement loc, String value) {
-		loc.sendKeys(value);
-	}
-	//-------------------------------------------------------------
+	
+
 	
 	public static void button(WebElement loc) {
 		loc.click();
 
+	}
+	//-------------------------------------------------------
+	public static void fill(WebElement loc, String value) {
+		loc.sendKeys(value);
 	}
 	//--------------------------------------------------------------
 	public static void windowHandles(int i) {
